@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,125 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* --- For Time.js --- */
+
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-left: 66px;
+  margin-top: 40px;
+}
+
+label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 66px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.box {
+  width: 100%;
+  height: 509px;
+  background: #fbfcfd;
+  margin-top: 99.5px;
+}
+
+.container {
+  width: 100%;
+  height: 357px;
+  display: flex;
+}
+
+.lines {
+  margin-left: 40px;
+  margin-top: 6px;
+}
+
+.dot {
+  position: relative;
+  
+  display: inline-block;
+  width: 0;
+  height: 0;
+  
+  margin-top: .2em;
+  margin-left: .9em;
+  margin-right: .9em;
+  margin-bottom: 1.2em;
+  
+  border-right:  .3em solid transparent;
+  border-bottom: .7em  solid #d6d6ef;
+  border-left:   .3em solid transparent;
+
+  /* Controlls the size of the stars. */
+  font-size: 12px;
+}
+  
+.dot:before, .dot:after {
+  content: '';
+  
+  display: block;
+  width: 0;
+  height: 0;
+  
+  position: absolute;
+  top: .57em;
+  left: -0.965em;
+
+  border-right:  0.97em solid transparent;
+  border-bottom: .7em  solid #d6d6ef;
+  border-left:   0.97em solid transparent;
+
+  transform: rotate(-35deg);
+}
+
+.dot:after {  
+  transform: rotate(35deg);
+}
+
+.line {
+  min-height: 103px;
+  width: 2.4px;
+  background: #d6d6ef;
+}
+
+.cards {
+  margin-top: 10px;
+  margin-left: 12px;
+}
+
+.card {
+  height: 118px;
+  background: #ffffff;
+  /* box-shadow: 0 2px 2px 0 #eeeeee40;
+  box-shadow: 0px 16px 15px -10px rgba(105, 96, 215, 0.0944602); */
+}
+
+h4 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  margin-left: 25px;
+  margin-bottom: 5px;
+  color: #2b2862;
+}
+
+p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2b2862;
+  margin-left: 25px;
 }
