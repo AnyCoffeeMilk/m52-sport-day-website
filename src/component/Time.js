@@ -12,7 +12,7 @@ export default function Time() {
     ))
     const timetableList = timetable[select].map((table, i) => (
         <div key={i}>
-            <div className="h-24 px-4 my-4 mx-6 text-3xl flex justify-between items-center bg-red-400 text-white">
+            <div className="h-24 px-4 my-4 mx-3 text-3xl flex justify-between items-center bg-red-400 text-white">
                 <div>{ table.day }</div>
                 <div className="text-lg">{ table.date }</div>
             </div>

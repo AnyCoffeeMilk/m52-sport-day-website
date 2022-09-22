@@ -11,7 +11,9 @@ import About from './component/About';
 function App() {
   return (
     <div>
-      <img src="https://m51.puiching.edu.mo/imgs/banner.png" />
+      <div className=''>
+        <img className='' alt='banner' src="https://m51.puiching.edu.mo/imgs/banner.png" />
+      </div>
       <Navbar />
       <HashRouter>
         <Routes>

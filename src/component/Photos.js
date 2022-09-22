@@ -42,7 +42,7 @@ export default function Photos() {
                 若果您想查詢的運動員編號為 1234 ，可輸入 123 或 234 或 1234。點擊圖片放大
             </div>
             <div className="border-t my-7" />
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                 {imgsList}
             </div>
         </div>

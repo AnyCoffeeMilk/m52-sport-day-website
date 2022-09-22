@@ -13,7 +13,7 @@ export default function About() {
         </div>
     ))
     return (
-        <div>
+        <div className="grid md:gird-cols-4">
             { imgsList }
         </div>
     )
