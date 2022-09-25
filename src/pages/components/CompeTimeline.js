@@ -10,7 +10,7 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 export default function CompeTimeline({ table }) {
   const tableList = table.map((time, i) => (
     <TimelineItem key={i}>
-      <TimelineOppositeContent sx={{fontSize: '1.15em'}} color="text.secondary">
+      <TimelineOppositeContent sx={{fontSize: '1.15em', fontWeight: '500'}} color="text.secondary">
         {time.time}
       </TimelineOppositeContent>
       <TimelineSeparator>
