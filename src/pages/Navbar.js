@@ -19,7 +19,7 @@ export default function Navbar() {
     })
 
     return (
-        <div className='pt-2 pb-2.5 bg-white text-gray-400 shadow flex justify-evenly sticky top-0'>
+        <div className='pt-2 pb-2.5 bg-white z-10 text-gray-400 shadow flex justify-evenly sticky top-0'>
             { tabsList }
         </div>
     )

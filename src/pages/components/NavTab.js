@@ -10,7 +10,7 @@ export default function NavTab({ tabType, tabText, curTab, onClick, Icon }) {
             <div style={handleIconStyle} className="text-center">
                 { Icon }
             </div>
-            <div style={handleTextStyle} className='text-xs text-center whitespace-nowrap'>
+            <div style={handleTextStyle} className='text-xs font-semibold text-center whitespace-nowrap'>
                 { tabText }
             </div>
         </a>

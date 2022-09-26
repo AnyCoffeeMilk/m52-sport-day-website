@@ -35,7 +35,7 @@ export default function Result() {
 
     return (
         <div className="m-4 max-w-[720px] md:mx-auto">
-            <div className="px-4 py-5 text-lg bg-red-400 text-white">
+            <div className="px-4 py-5 rounded-[2px] text-lg font-semibold bg-red-400 text-white">
                 比賽成績查詢
             </div>
             <SearchBar inputWord={word}

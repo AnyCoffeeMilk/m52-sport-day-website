@@ -1,21 +1,15 @@
 import { useState } from "react"
 import SearchIcon from '@mui/icons-material/Search';
 import ZoomedImg from "./components/ZoomedImg";
+import fetchPhotos from "../data/fetchPhotos";
 
 export default function Photos() {
-    const [zoom, setZoom] = useState()
-    const imgs = [
-        'https://m51.puiching.edu.mo/imgs/sports_pic/day1m/small/DSC_4244.JPG',
-        'https://m51.puiching.edu.mo/imgs/sports_pic/day1m/small/DSC_4250.JPG',
-        'https://m51.puiching.edu.mo/imgs/sports_pic/day1m/small/DSC_4260.JPG',
-        'https://m51.puiching.edu.mo/imgs/sports_pic/day1m/small/DSC_4270.JPG',
-        'https://m51.puiching.edu.mo/imgs/sports_pic/day1m/small/DSC_4280.JPG',
-        'https://m51.puiching.edu.mo/imgs/sports_pic/day1m/small/DSC_4290.JPG',
-        'https://m51.puiching.edu.mo/imgs/sports_pic/day1m/small/DSC_4300.JPG',
-        'https://m51.puiching.edu.mo/imgs/sports_pic/day1m/small/DSC_4310.JPG',
-        'https://m51.puiching.edu.mo/imgs/sports_pic/day1m/small/DSC_4300.JPG',
-        'https://m51.puiching.edu.mo/imgs/sports_pic/day1m/small/DSC_4330.JPG',
-    ]
+    const [imgs, setImgs] = useState([])
+    const [zoom, setZoom] = useState(
+        fetchPhotos().fetchCurrent((data) => {
+            return setImgs(data.imgs)
+        })
+    )
     
     const imgsList = imgs.map((img, i) => (
         <div key={i} className="w-12/13 h-36 flex justify-center" onClick={() => setZoom(i)}>
@@ -29,7 +23,7 @@ export default function Photos() {
                 imgId={zoom}
                 onClick={() => setZoom()}
             />
-            <div className="px-4 py-5 mb-4 text-lg bg-red-400 text-white">
+            <div className="px-4 py-5 rounded-[2px] mb-4 text-lg bg-red-400 text-white font-semibold">
                 校運圖片查詢
             </div>
             <div className="flex border px-3 py-2 rounded-lg w-full bg-slate-100">

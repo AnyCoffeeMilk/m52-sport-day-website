@@ -7,7 +7,7 @@ export default function ResultBlock({ result, selected, index, onClick }) {
             onClick={() => onClick(index)} key={index}
         >
             <div className="flex justify-between items-center py-4">
-                <div>
+                <div className="font-semibold">
                     <div>
                         {result.name}
                     </div>
