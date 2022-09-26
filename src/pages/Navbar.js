@@ -1,26 +1,29 @@
-import NavTab from './components/NavTab';
-import tabs from '../data/tabs'
-import { useState } from 'react';
+import NavTab from "./components/NavTab";
+import tabs from "../data/tabs";
+import { useState } from "react";
 
 export default function Navbar() {
-    const [curTab, setCurTab] = useState(() => {
-        const startTab = window.location.href.split('/')[4]
-        return (startTab === undefined) ? 'home' : startTab
-    })
+  const [curTab, setCurTab] = useState(() => {
+    const startTab = window.location.href.split("/")[4];
+    return startTab === undefined ? "home" : startTab;
+  });
 
-    const tabsList = tabs.map((tab, i) => {
-        return <NavTab key={i}
-            tabText={tab.text}
-            curTab={curTab}
-            onClick={(tabtype) => setCurTab(tabtype)}
-            Icon={tab.icon}
-            tabType={tab.type}
-        />
-    })
-
+  const tabsList = tabs.map((tab, i) => {
     return (
-        <div className='pt-2 pb-2.5 bg-white z-10 text-gray-400 shadow flex justify-evenly sticky top-0'>
-            { tabsList }
-        </div>
-    )
+      <NavTab
+        key={i}
+        tabText={tab.text}
+        curTab={curTab}
+        onClick={(tabtype) => setCurTab(tabtype)}
+        Icon={tab.icon}
+        tabType={tab.type}
+      />
+    );
+  });
+
+  return (
+    <div className="pt-2 pb-2.5 border-t bg-white z-10 text-gray-400 shadow flex justify-evenly fixed w-full bottom-0 md:sticky md:top-0">
+      {tabsList}
+    </div>
+  );
 }
