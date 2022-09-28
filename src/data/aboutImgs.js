@@ -8,12 +8,6 @@ const aboutImgs = [
     },{
         name: 'about mountains',
         url: 'https://m51.puiching.edu.mo/imgs/mountains.png'
-    },{
-        name: 'about red',
-        url: 'https://m51.puiching.edu.mo/imgs/red.png'
-    },{
-        name: 'about cat',
-        url: 'https://m51.puiching.edu.mo/imgs/cat.png'
     }
 ]
 

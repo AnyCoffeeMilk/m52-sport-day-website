@@ -6,11 +6,11 @@ export default function NavTab({ tabType, tabText, curTab, onClick, Icon }) {
     const handleTextStyle = (curTab === tabType) ? { color: selectedColor } : {}
 
     return (
-        <a className='grid items-center' href={'/#/' + tabType} onClick={() => onClick(tabType)}>
-            <div style={handleIconStyle} className="text-center">
+        <a className='grid items-center md:flex' href={'/#/' + tabType} onClick={() => onClick(tabType)}>
+            <div style={handleIconStyle} className="text-center md:pr-1">
                 { Icon }
             </div>
-            <div style={handleTextStyle} className='text-xs font-semibold text-center whitespace-nowrap'>
+            <div style={handleTextStyle} className='text-xs md:text-base font-semibold text-center whitespace-nowrap'>
                 { tabText }
             </div>
         </a>

@@ -2,7 +2,7 @@ const timetable = {
     '男甲': [
         {
             day: '第一日', 
-            date: '28 Nov',
+            date: '28 Sep',
             table: [
                 {
                     time: '09:00 am',
@@ -29,7 +29,7 @@ const timetable = {
             ]
         },{
             day: '第二日', 
-            date: '29 Nov',
+            date: '29 Sep',
             table: [
                 {
                     time: '09:18 am',
@@ -56,7 +56,7 @@ const timetable = {
             ]
         },{
             day: '第三日', 
-            date: '30 Nov',
+            date: '30 Sep',
             table: [
                 {
                     time: '10:14 am',
@@ -83,7 +83,7 @@ const timetable = {
     '男乙': [
         {
             day: '第一日', 
-            date: '28 Nov',
+            date: '28 Sep',
             table: [
                 {
                     time: '09:00 am',
@@ -107,7 +107,7 @@ const timetable = {
             ]
         },{
             day: '第二日', 
-            date: '29 Nov',
+            date: '29 Sep',
             table: [
                 {
                     time: '09:00 am',
@@ -137,7 +137,7 @@ const timetable = {
             ]
         },{
             day: '第三日', 
-            date: '30 Nov',
+            date: '30 Sep',
             table: [
                 {
                     time: '10:10 am',
@@ -164,7 +164,7 @@ const timetable = {
     '男丙': [
         {
             day: '第一日', 
-            date: '28 Nov',
+            date: '28 Sep',
             table: [
                 {
                     time: '02:00 pm',
@@ -179,7 +179,7 @@ const timetable = {
             ]
         },{
             day: '第二日', 
-            date: '29 Nov',
+            date: '29 Sep',
             table: [
                 {
                     time: '02:00 pm',
@@ -200,7 +200,7 @@ const timetable = {
             ]
         },{
             day: '第三日', 
-            date: '30 Nov',
+            date: '30 Sep',
             table: [
                 {
                     time: '10:06 am',
@@ -224,7 +224,7 @@ const timetable = {
     '男丁': [
         {
             day: '第一日', 
-            date: '28 Nov',
+            date: '28 Sep',
             table: [
                 {
                     time: '09:20 am',
@@ -242,7 +242,7 @@ const timetable = {
             ]
         },{
             day: '第二日', 
-            date: '29 Nov',
+            date: '29 Sep',
             table: [
                 {
                     time: '09:00 am',
@@ -260,7 +260,7 @@ const timetable = {
             ]
         },{
             day: '第三日', 
-            date: '30 Nov',
+            date: '30 Sep',
             table: [
                 {
                     time: '10:00 am',
@@ -281,7 +281,7 @@ const timetable = {
     '女甲': [
         {
             day: '第一日', 
-            date: '28 Nov',
+            date: '28 Sep',
             table: [
                 {
                     time: '09:59 am',
@@ -302,7 +302,7 @@ const timetable = {
             ]
         },{
             day: '第二日', 
-            date: '29 Nov',
+            date: '29 Sep',
             table: [
                 {
                     time: '09:28 am',
@@ -326,7 +326,7 @@ const timetable = {
             ]
         },{
             day: '第三日', 
-            date: '30 Nov',
+            date: '30 Sep',
             table: [
                 {
                     time: '10:12 am',
@@ -353,7 +353,7 @@ const timetable = {
     '女乙': [
         {
             day: '第一日', 
-            date: '28 Nov',
+            date: '28 Sep',
             table: [
                 {
                     time: '10:10 am',
@@ -377,7 +377,7 @@ const timetable = {
             ]
         },{
             day: '第二日', 
-            date: '29 Nov',
+            date: '29 Sep',
             table: [
                 {
                     time: '09:33 am',
@@ -398,7 +398,7 @@ const timetable = {
             ]
         },{
             day: '第三日', 
-            date: '30 Nov',
+            date: '30 Sep',
             table: [
                 {
                     time: '10:08 am',
@@ -425,7 +425,7 @@ const timetable = {
     '女丙': [
         {
             day: '第一日', 
-            date: '28 Nov',
+            date: '28 Sep',
             table: [
                 {
                     time: '02:00 pm',
@@ -440,7 +440,7 @@ const timetable = {
             ]
         },{
             day: '第二日', 
-            date: '29 Nov',
+            date: '29 Sep',
             table: [
                 {
                     time: '02:00 pm',
@@ -461,7 +461,7 @@ const timetable = {
             ]
         },{
             day: '第三日', 
-            date: '30 Nov',
+            date: '30 Sep',
             table: [
                 {
                     time: '10:04 am',
@@ -485,7 +485,7 @@ const timetable = {
     '女丁': [
         {
             day: '第一日', 
-            date: '28 Nov',
+            date: '28 Sep',
             table: [
                 {
                     time: '09:00 am',
@@ -503,7 +503,7 @@ const timetable = {
             ]
         },{
             day: '第二日', 
-            date: '29 Nov',
+            date: '29 Sep',
             table: [
                 {
                     time: '09:00 am',
@@ -521,7 +521,7 @@ const timetable = {
             ]
         },{
             day: '第三日', 
-            date: '30 Nov',
+            date: '30 Sep',
             table: [
                 {
                     time: '10:02 am',
