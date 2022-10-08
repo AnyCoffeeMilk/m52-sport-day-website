@@ -8,7 +8,7 @@ export default function TimeTableBlock({ table, index }) {
                 <div className="text-lg">{ table.date }</div>
             </div>
             <div className="flex my-7">
-                <CompeTimeline table={table.table} />
+                <CompeTimeline table={table.table} date={table.date} />
             </div>
         </div>
     )

@@ -10,6 +10,7 @@ export default function About() {
     return (
         <div className="max-w-[730px] m-auto">
             { imgsList }
+            <div className="mb-16" />
         </div>
     )
 }

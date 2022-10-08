@@ -7,19 +7,31 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 
-export default function CompeTimeline({ table }) {
-  const tableList = table.map((time, i) => (
-    <TimelineItem key={i}>
-      <TimelineOppositeContent sx={{fontSize: '1.15em', fontWeight: '500'}} color="text.secondary">
-        {time.time}
-      </TimelineOppositeContent>
-      <TimelineSeparator>
-        <TimelineDot sx={{background: '#f87171'}} />
-        <TimelineConnector />
-      </TimelineSeparator>
-      <TimelineContent sx={{fontSize: '1.15em'}}>{time.content}</TimelineContent>
-    </TimelineItem>
-  ))
+export default function CompeTimeline({ table, date }) {
+  const tableList = table.map((time, i) => {
+    const curTime = new Date()
+    const nodeTime = new Date(`2022 Sep ${date} ${time.time}`)
+
+    const gray = '#9ca3af'
+    const red = '#f87171'
+    let past = false
+    if (nodeTime.getTime() < curTime.getTime()) {
+      past = true
+    }
+
+    return (
+      <TimelineItem key={i}>
+        <TimelineOppositeContent sx={{fontSize: '1.15em', fontWeight: '500', color: past ? gray : null}} color="text.secondary">
+          {time.time}
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot sx={{background: past ? gray : red}} />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{fontSize: '1.15em', color: past ? gray : null}}>{time.content}</TimelineContent>
+      </TimelineItem>
+    )
+  })
 
   return (
     <React.Fragment>

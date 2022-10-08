@@ -59,22 +59,22 @@ const timetable = {
             date: '30 Sep',
             table: [
                 {
-                    time: '10:14 am',
+                    time: '10:10 am',
                     content: '200M(決)'
                 },{
-                    time: '11:09 am',
+                    time: '11:17 am',
                     content: '800M(分組決)'
                 },{
-                    time: '11:38 am',
+                    time: '11:42 am',
                     content: '100M(決)'
                 },{
-                    time: '12:01 pm',
-                    content: '1600M接力'
-                },{
-                    time: '12:10 pm',
-                    content: '師生校友接力賽'
+                    time: '12:12 pm',
+                    content: '1600M接力(決)'
                 },{
                     time: '12:20 pm',
+                    content: '師生校友接力賽'
+                },{
+                    time: '12:30 pm',
                     content: '師生歡樂跑'
                 }
             ]
@@ -131,6 +131,9 @@ const timetable = {
                     time: '02:30 pm',
                     content: '100M(複)'
                 },{
+                    time: '03:00 am',
+                    content: '三級跳(決) (補)'
+                },{
                     time: '03:20 pm',
                     content: '400M接力(決)'
                 }
@@ -140,22 +143,22 @@ const timetable = {
             date: '30 Sep',
             table: [
                 {
-                    time: '10:10 am',
+                    time: '09:00 am',
+                    content: '跳高(決) (補)'
+                },{
+                    time: '10:06 am',
                     content: '200M(決)'
                 },{
-                    time: '10:54 am',
+                    time: '11:02 am',
                     content: '800M(分組決)'
                 },{
-                    time: '11:34 am',
+                    time: '11:38 am',
                     content: '100M(決)'
                 },{
-                    time: '11:47 am',
-                    content: '1600M接力(決)'
-                },{
-                    time: '12:10 pm',
+                    time: '12:20 pm',
                     content: '師生校友接力賽'
                 },{
-                    time: '12:20 pm',
+                    time: '12:30 pm',
                     content: '師生歡樂跑'
                 }
             ]
@@ -203,19 +206,19 @@ const timetable = {
             date: '30 Sep',
             table: [
                 {
-                    time: '10:06 am',
+                    time: '10:02 am',
                     content: '200M(決)'
                 },{
-                    time: '10:42 am',
+                    time: '10:50 am',
                     content: '800M(分組決)'
                 },{
-                    time: '11:30 am',
+                    time: '11:34 am',
                     content: '100M(決)'
                 },{
-                    time: '12:10 pm',
+                    time: '12:20 pm',
                     content: '師生校友接力賽'
                 },{
-                    time: '12:20 pm',
+                    time: '12:30 pm',
                     content: '師生歡樂跑'
                 }
             ]
@@ -263,16 +266,25 @@ const timetable = {
             date: '30 Sep',
             table: [
                 {
-                    time: '10:00 am',
+                    time: '9:00 am',
                     content: '60M(決)'
                 },{
-                    time: '11:26 am',
+                    time: '09:06 am',
+                    content: '跳遠(決)'
+                },{
+                    time: '09:30 am',
+                    content: '200M(分組決)'
+                },{
+                    time: '10:42 am',
                     content: '100M(決)'
                 },{
-                    time: '12:10 pm',
-                    content: '師生校友接力賽'
+                    time: '11:44 am',
+                    content: '400M接力(分組決)'
                 },{
                     time: '12:20 pm',
+                    content: '師生校友接力賽'
+                },{
+                    time: '12:30 pm',
                     content: '師生歡樂跑'
                 }
             ]
@@ -292,6 +304,9 @@ const timetable = {
                 },{
                     time: '11:50 am',
                     content: '400M(初)'
+                },{
+                    time: '12:15 pm',
+                    content: '100M(初) B場 (補)'
                 },{
                     time: '12:22 pm',
                     content: '計時員及檢錄員 60 及 100 公尺'
@@ -320,6 +335,9 @@ const timetable = {
                     time: '02:35 pm',
                     content: '100M(複)'
                 },{
+                    time: '03:00 pm',
+                    content: '跳高(決)'
+                },{
                     time: '03:25 pm',
                     content: '400M接力(決)'
                 }
@@ -329,22 +347,22 @@ const timetable = {
             date: '30 Sep',
             table: [
                 {
-                    time: '10:12 am',
+                    time: '10:08 am',
                     content: '200M(決)'
                 },{
                     time: '10:30 am',
                     content: '800M(分組決)'
                 },{
-                    time: '11:36 am',
+                    time: '11:40 am',
                     content: '100M(決)'
                 },{
-                    time: '11:54 am',
+                    time: '12:04 pm',
                     content: '1600M(決)'
                 },{
-                    time: '12:10 pm',
+                    time: '12:20 pm',
                     content: '師生校友接力賽'
                 },{
-                    time: '12:20 pm',
+                    time: '12:30 pm',
                     content: '師生歡樂跑'
                 }
             ]
@@ -401,22 +419,19 @@ const timetable = {
             date: '30 Sep',
             table: [
                 {
-                    time: '10:08 am',
+                    time: '10:04 am',
                     content: '200M(決)'
                 },{
                     time: '10:23 am',
                     content: '800M(決)'
                 },{
-                    time: '11:32 am',
+                    time: '11:36 am',
                     content: '100M(決)'
                 },{
-                    time: '11:47 am',
-                    content: '1600M(決)'
-                },{
-                    time: '12:10 pm',
+                    time: '12:20 pm',
                     content: '師生校友接力賽'
                 },{
-                    time: '12:20 pm',
+                    time: '12:30 pm',
                     content: '師生歡樂跑'
                 }
             ]
@@ -464,19 +479,19 @@ const timetable = {
             date: '30 Sep',
             table: [
                 {
-                    time: '10:04 am',
+                    time: '10:00 am',
                     content: '200M(決)'
                 },{
                     time: '10:16 am',
-                    content: '800M(分組決)'
+                    content: '800M(決)'
                 },{
-                    time: '11:28 am',
+                    time: '11:32 am',
                     content: '100M(決)'
                 },{
-                    time: '12:10 pm',
+                    time: '12:20 pm',
                     content: '師生校友接力賽'
                 },{
-                    time: '12:20 pm',
+                    time: '12:30 pm',
                     content: '師生歡樂跑'
                 }
             ]
@@ -524,16 +539,25 @@ const timetable = {
             date: '30 Sep',
             table: [
                 {
-                    time: '10:02 am',
+                    time: '09:05 am',
                     content: '60M(決)'
                 },{
-                    time: '11:24 am',
+                    time: '09:06 am',
+                    content: '跳遠(決)'
+                },{
+                    time: '09:40 am',
+                    content: '200M(分組決)'
+                },{
+                    time: '10:44 am',
                     content: '100M(決)'
                 },{
-                    time: '12:10 pm',
-                    content: '師生校友接力賽'
+                    time: '11:52 am',
+                    content: '400M接力(分組決)'
                 },{
                     time: '12:20 pm',
+                    content: '師生校友接力賽'
+                },{
+                    time: '12:30 pm',
                     content: '師生歡樂跑'
                 }
             ]

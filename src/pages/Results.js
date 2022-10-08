@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import fetchResults from '../data/fetchResults'
 import ResultBlock from "./components/ResultBlock";
 import SearchBar from "./components/SearchBar";
@@ -6,11 +6,13 @@ import SearchBar from "./components/SearchBar";
 export default function Result() {
     const [word, setWord] = useState('')
     const [results, setResults] = useState([])
-    const [select, setSelect] = useState(
+    const [select, setSelect] = useState()
+    
+    useEffect(() => {
         fetchResults().fetchCurrent((data) => {
             return setResults(data.results)
         })
-    )
+    }, [])
 
     const handleClick = (i) => {
         if (select === i) {

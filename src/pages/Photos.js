@@ -11,13 +11,15 @@ export default function Photos() {
     const timerRef = useRef(null)
 
     useEffect(() => {
-        clearTimeout(timerRef.current)
-        timerRef.current = setTimeout(() => {
-            fetchPhotos(num).fetchCurrent((data) => {
-                setImgs(data.img)
-                clearTimeout(timerRef.current)
-            })
-        }, 1500)
+        if (num !== '') {
+            clearTimeout(timerRef.current)
+            timerRef.current = setTimeout(() => {
+                fetchPhotos(num).fetchCurrent((data) => {
+                    setImgs(data.img)
+                    clearTimeout(timerRef.current)
+                })
+            }, 1500)
+        }
     }, [num])
     
     const imgsList = imgs.map((img, i) => (
