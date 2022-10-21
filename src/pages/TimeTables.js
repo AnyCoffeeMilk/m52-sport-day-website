@@ -24,7 +24,7 @@ export default function TimeTables() {
             <div className="py-4 flex justify-evenly max-w-[700px] m-auto">
                 { teamsList }
             </div>
-            <div className="md:grid grid-cols-3">
+            <div className="md:flex justify-center max-w-[600px] m-auto">
                 { timetableList }
             </div>
         </div>
